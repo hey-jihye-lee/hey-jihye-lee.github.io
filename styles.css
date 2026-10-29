@@ -106,3 +106,28 @@ footer { padding: 34px 0 48px; border-top: 1px solid var(--line); display: flex;
   .hero { min-height: 90vh; break-after: page; }
   .questions { break-before: page; }
 }
+.research-work { padding: 120px 0 40px; border-top: 1px solid var(--line); }
+.section-intro.simple { margin-bottom: 44px; }
+.research-group { padding: 72px 0 88px; border-top: 1px solid var(--line); }
+.group-heading { display: grid; grid-template-columns: 80px 1fr; gap: 22px; align-items: start; margin-bottom: 46px; }
+.group-heading span { color: var(--accent); font-weight: 750; font-size: .78rem; letter-spacing: .08em; padding-top: 10px; }
+.group-heading h3 { margin: 0; max-width: 860px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.5rem, 4.5vw, 4.8rem); line-height: 1; font-weight: 400; letter-spacing: -.045em; }
+.work-list { margin-left: 102px; }
+.work { display: grid; grid-template-columns: minmax(240px, 1.2fr) 1fr; column-gap: 48px; padding: 28px 0 32px; border-top: 1px solid var(--line); }
+.work .status { grid-column: 1 / -1; margin: 0 0 12px; color: var(--accent); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.work h4 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.35rem, 2vw, 2rem); line-height: 1.15; font-weight: 400; letter-spacing: -.025em; }
+.work > p:last-child { margin: 2px 0 0; color: var(--muted); }
+.work.featured h4 { font-size: clamp(1.65rem, 2.5vw, 2.5rem); }
+.led-to { margin: 28px 0 0 102px; color: var(--accent); font-size: .9rem; font-weight: 650; }
+.mirror-group { background: rgba(48,75,63,.04); margin-left: -24px; margin-right: -24px; padding-left: 24px; padding-right: 24px; }
+.north-star { padding: 140px 0 150px; border-top: 1px solid var(--line); }
+.north-star h2 { max-width: 950px; margin: 0 0 34px; font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(3.2rem, 6.5vw, 6.8rem); line-height: .95; letter-spacing: -.05em; }
+.north-star > p:not(.eyebrow) { max-width: 700px; color: var(--muted); font-size: 1.08rem; }
+.north-star .bio { margin-top: 52px; color: var(--ink) !important; font-size: .88rem !important; font-weight: 650; }
+@media (max-width: 760px) {
+  .group-heading { grid-template-columns: 40px 1fr; gap: 8px; }
+  .work-list, .led-to { margin-left: 0; }
+  .work { display: block; }
+  .work h4 { margin-bottom: 14px; }
+  .research-group { padding: 54px 0 68px; }
+}
