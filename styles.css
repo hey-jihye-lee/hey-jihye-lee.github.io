@@ -188,3 +188,26 @@ footer { padding: 34px 0 48px; border-top: 1px solid var(--line); display: flex;
     height: 255px !important;
   }
 }
+
+/* Selected publications */
+.selected-publications { padding: 120px 0 80px; border-top: 1px solid var(--line); }
+.pub-header { margin-bottom: 48px; }
+.pub-header h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3rem, 5vw, 5.4rem); font-weight: 400; line-height: .98; letter-spacing: -.045em; }
+.publication-row { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 46px; padding: 46px 0; border-top: 1px solid var(--line); align-items: start; }
+.paper-thumb { display: block; width: 220px; min-height: 285px; background: white; border: 1px solid #ddd; box-shadow: 0 6px 18px rgba(0,0,0,.08); overflow: hidden; text-decoration: none; }
+.pdf-thumb { display: block; max-width: 100%; background: white; }
+.paper-thumb.thumb-fallback::after { content: "PDF"; display: grid; place-items: center; min-height: 285px; color: var(--muted); font-size: .8rem; letter-spacing: .1em; }
+.pub-meta { margin: 2px 0 12px; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; font-size: .72rem; font-weight: 700; }
+.pub-copy h3 { margin: 0 0 6px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.7rem, 2.6vw, 2.7rem); font-weight: 400; line-height: 1.08; letter-spacing: -.03em; }
+.pub-subtitle { margin: 0 0 20px; font-style: italic; color: #393934; font-size: 1.03rem; }
+.pub-note { max-width: 720px; color: var(--muted); }
+.pub-actions { display: flex; gap: 10px; margin-top: 26px; flex-wrap: wrap; }
+.pub-actions a { padding: 8px 14px; border: 1px solid var(--ink); text-decoration: none; text-transform: uppercase; letter-spacing: .06em; font-size: .68rem; font-weight: 700; }
+.pub-actions a:hover { background: var(--ink); color: var(--bg); }
+@media (max-width: 760px) {
+  .publication-row { grid-template-columns: 110px minmax(0,1fr); gap: 20px; }
+  .paper-thumb { width: 110px; min-height: 145px; }
+  .pdf-thumb { width: 110px !important; height: auto !important; }
+  .paper-thumb.thumb-fallback::after { min-height: 145px; }
+  .pub-note { grid-column: 1 / -1; }
+}
