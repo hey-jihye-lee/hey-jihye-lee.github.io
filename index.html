@@ -12,7 +12,7 @@
     <span class="site-mark">JL</span>
     <nav aria-label="Primary navigation">
       <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
+      <a href="#selected-publications">Publications</a>
       <a href="#cv">CV</a>
       <a href="#about">About</a>
     </nav>
@@ -68,6 +68,64 @@
           <span class="topics">LLM behavior · Artificial identity · Responsible AI</span>
         </article>
       </div>
+    </section>
+
+    <section class="selected-publications" id="selected-publications">
+      <div class="pub-header">
+        <p class="eyebrow">Publications</p>
+        <h2>Selected publications</h2>
+      </div>
+
+      <article class="publication-row">
+        <a class="paper-thumb" href="Can%20social%20robots%20reduce%20the%20loneliness%20of%20older%20adults.pdf" target="_blank" aria-label="Open social robots paper PDF">
+          <canvas class="pdf-thumb" data-pdf="Can%20social%20robots%20reduce%20the%20loneliness%20of%20older%20adults.pdf"></canvas>
+        </a>
+        <div class="pub-copy">
+          <p class="pub-meta">Geriatric Nursing · 2025 · First author</p>
+          <h3>Can Social Robots Reduce the Loneliness of Older Adults?</h3>
+          <p class="pub-subtitle">Interaction and Communication between Social Robots and Older Adults</p>
+          <p class="pub-note">Long-term, real-world social robot use among older adults living alone, with attention to relationship formation and the role of care workers and family as mediators.</p>
+          <div class="pub-actions">
+            <a href="Can%20social%20robots%20reduce%20the%20loneliness%20of%20older%20adults.pdf" target="_blank">Paper</a>
+            <a href="https://doi.org/10.1016/j.gerinurse.2025.04.032" target="_blank" rel="noopener">DOI</a>
+            <a href="#research">Research story</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="publication-row">
+        <a class="paper-thumb" href="Channel%20Allocation%20and%20Equity%20in%20Preventive%20Campaigns%20for%20Older%20Adults.pdf" target="_blank" aria-label="Open digital health ABM paper PDF">
+          <canvas class="pdf-thumb" data-pdf="Channel%20Allocation%20and%20Equity%20in%20Preventive%20Campaigns%20for%20Older%20Adults.pdf"></canvas>
+        </a>
+        <div class="pub-copy">
+          <p class="pub-meta">Journal of Medical Internet Research · 2026 · First author</p>
+          <h3>Channel Allocation and Equity in Preventive Campaigns for Older Adults</h3>
+          <p class="pub-subtitle">Agent-Based Modeling Study</p>
+          <p class="pub-note">A data-driven simulation study of channel allocation, personalization, and equity trade-offs in preventive health campaigns for older adults.</p>
+          <div class="pub-actions">
+            <a href="Channel%20Allocation%20and%20Equity%20in%20Preventive%20Campaigns%20for%20Older%20Adults.pdf" target="_blank">Paper</a>
+            <a href="https://doi.org/10.2196/88429" target="_blank" rel="noopener">DOI</a>
+            <a href="#research">Research story</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="publication-row">
+        <a class="paper-thumb" href="Designing%20Artificial%20Identity%20The%20Identity%20Design%20Framework%20andResearch%20Agenda.pdf" target="_blank" aria-label="Open artificial identity paper PDF">
+          <canvas class="pdf-thumb" data-pdf="Designing%20Artificial%20Identity%20The%20Identity%20Design%20Framework%20andResearch%20Agenda.pdf"></canvas>
+        </a>
+        <div class="pub-copy">
+          <p class="pub-meta">ACM DIS · 2026</p>
+          <h3>Designing Artificial Identity</h3>
+          <p class="pub-subtitle">The Identity Design Framework and Research Agenda</p>
+          <p class="pub-note">An interdisciplinary framework for designing coherent and responsible artificial identities across individual, group, and societal levels.</p>
+          <div class="pub-actions">
+            <a href="Designing%20Artificial%20Identity%20The%20Identity%20Design%20Framework%20andResearch%20Agenda.pdf" target="_blank">Paper</a>
+            <a href="https://doi.org/10.1145/3800645.3812962" target="_blank" rel="noopener">DOI</a>
+            <a href="#research">Research story</a>
+          </div>
+        </div>
+      </article>
     </section>
 
     <section class="research-work" id="publications">
@@ -131,5 +189,26 @@
     <span>© 2026 Jihye Lee</span>
     <span>Built as a long-term academic home.</span>
   </footer>
+  <script type="module">
+    import * as pdfjsLib from "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs";
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
+    document.querySelectorAll(".pdf-thumb").forEach(async (canvas) => {
+      try {
+        const pdf = await pdfjsLib.getDocument(canvas.dataset.pdf).promise;
+        const page = await pdf.getPage(1);
+        const base = page.getViewport({ scale: 1 });
+        const scale = 220 / base.width;
+        const viewport = page.getViewport({ scale });
+        const ratio = window.devicePixelRatio || 1;
+        canvas.width = viewport.width * ratio;
+        canvas.height = viewport.height * ratio;
+        canvas.style.width = viewport.width + "px";
+        canvas.style.height = viewport.height + "px";
+        await page.render({canvasContext: canvas.getContext("2d"), viewport, transform: ratio !== 1 ? [ratio,0,0,ratio,0,0] : null}).promise;
+      } catch (e) {
+        canvas.closest(".paper-thumb").classList.add("thumb-fallback");
+      }
+    });
+  </script>
 </body>
 </html>
