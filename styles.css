@@ -802,3 +802,23 @@ body{font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif!important}
 .status-chip.review{background:#f5e6f0;color:#842361}
 .status-chip.prep{background:#e9f0f5;color:#365e78}
 .current-projects .project-card{min-height:390px}
+
+/* v2.6 dedicated research-interest pages */
+.research-interest-page{padding-bottom:55px}
+.interest-hero{padding:62px 0 48px;border-bottom:1px solid #e6e6e6}
+.interest-index{margin:0 0 12px;color:#8a2b6d;font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.interest-hero h1{font-family:"IBM Plex Sans",Arial,sans-serif;margin:0;max-width:760px;font-size:2.65rem;line-height:1.08;font-weight:500;letter-spacing:-.045em}
+.interest-hero h1 span{color:#8a2b6d;font-weight:400}
+.interest-lede{max-width:720px;margin:22px 0 17px;color:#454545;font-size:1.08rem;line-height:1.68}
+.back-interest{font-size:.78rem;color:#777;text-decoration:none}.back-interest:hover{color:#8a2b6d}
+.interest-copy,.interest-questions,.interest-related{padding:40px 0;border-bottom:1px solid #eee}
+.interest-copy h2,.interest-questions h2,.interest-related h2{margin:0 0 20px;font-family:"IBM Plex Sans",Arial,sans-serif;font-size:1.25rem;font-weight:600}
+.interest-columns{display:grid;grid-template-columns:1fr 1fr;gap:34px}.interest-columns p{margin:0;color:#555;font-size:.94rem;line-height:1.7}
+.interest-questions ul{margin:0;padding-left:20px;max-width:760px}.interest-questions li{padding:5px 0;color:#444;font-size:.95rem}
+.reference-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.reference-card{position:relative;display:block;padding:18px 40px 18px 18px;border:1px solid #dedede;border-radius:6px;text-decoration:none;background:#fff;min-height:135px;box-sizing:border-box;transition:border-color .15s ease,transform .15s ease}
+.reference-card:hover{border-color:#b66a9b;transform:translateY(-2px)}
+.ref-type{display:block;margin-bottom:10px;color:#8a2b6d;font-size:.65rem;font-weight:600;letter-spacing:.04em}
+.reference-card strong{display:block;color:#222;font-size:.98rem;line-height:1.3}.reference-card p{margin:7px 0 0;color:#666;font-size:.8rem;line-height:1.45}
+.ref-arrow{position:absolute;right:15px;top:15px;color:#8a2b6d;font-size:1rem}
+@media(max-width:650px){.interest-columns,.reference-grid{grid-template-columns:1fr}.interest-hero h1{font-size:2.15rem}}
