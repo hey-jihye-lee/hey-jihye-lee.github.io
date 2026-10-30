@@ -775,3 +775,8 @@ body{font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif!important}
 .card-plus{flex:0 0 34px;width:34px;height:34px;border-radius:50%;background:#e3e6e8;display:grid;place-items:center;font-size:1.35rem;font-weight:300;color:#555}
 .card-meta{margin:15px 0 10px;font-size:.76rem;font-weight:500;color:#444}.card-body>p:not(.card-meta){margin:0 0 18px;font-size:.86rem;line-height:1.55;color:#62676a}.card-body>a{margin-top:auto;color:#315f87;font-size:.82rem;text-decoration:none;border-bottom:1px solid #315f87;width:max-content}.card-body>a:hover{color:var(--accent);border-color:var(--accent)}
 @media(max-width:850px){.project-card-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.project-card-grid{grid-template-columns:1fr}.project-card{min-height:390px}}
+
+/* publication section hierarchy */
+.pub-section-title{grid-column:1/-1;margin:34px 0 4px!important;padding-bottom:10px;border-bottom:1px solid #ddd;font-family:"IBM Plex Sans",Arial,sans-serif!important;font-size:1.15rem!important;font-weight:600!important;text-transform:lowercase;color:#222}
+.pub-section-title:first-child{margin-top:28px!important}.pub-section-title.secondary{margin-top:48px!important}
+.full-publications>article a{color:#8a2b6d;text-decoration:none}.full-publications>article a:hover{text-decoration:underline}
