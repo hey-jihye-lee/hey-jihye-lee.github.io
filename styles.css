@@ -711,3 +711,27 @@ body {
 .news-page{padding-bottom:40px}.news-page>div{display:grid;grid-template-columns:100px 1fr;gap:22px;padding:16px 0;border-bottom:1px solid #eee}.news-page time{font-size:.8rem;color:#777}.news-page p{margin:0;font-size:.92rem}
 .cv-page{padding:34px 0 80px}.cv-page p{max-width:650px;color:#555}
 @media(max-width:700px){.sub-header{align-items:flex-start;padding:18px 0}.sub-header nav{gap:10px;flex-wrap:wrap;justify-content:flex-end}.pub-page-list article{grid-template-columns:55px 1fr}.news-page>div{grid-template-columns:1fr;gap:3px}}
+
+/* v2.1 current roles, profile scale, typography */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap');
+body { font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif!important; font-size:17px!important; }
+.new-header nav a,.sub-header nav a { font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif!important; }
+.alfolio-intro { grid-template-columns:minmax(0,1fr) 190px!important; gap:48px!important; }
+.home-photo,.home-photo img { width:190px!important; }
+.home-photo img { height:253px!important; border-radius:4px!important; }
+.alfolio-intro .home-copy h1 {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif!important;
+  font-size:2.9rem!important;
+  font-weight:600!important;
+  letter-spacing:-.035em!important;
+}
+.home-role { font-size:1.08rem!important; }
+.home-bio p { font-size:1.08rem!important; line-height:1.72!important; }
+.current-note { font-size:1rem!important; line-height:1.62!important; }
+.focus-heading h2,.pub-header h2,.news-heading h2,.cv-strip h2,.page-title h1 {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif!important;
+}
+.focus-card h3,.thread h2,.pub-copy h3,.project-page h2,.pub-page-list h2 {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif!important;
+}
+@media(max-width:700px){.home-photo,.home-photo img{width:175px!important}.home-photo img{height:233px!important}}
