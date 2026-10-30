@@ -8,187 +8,79 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <span class="site-mark">JL</span>
+  <header class="site-header new-header">
+    <a class="site-name" href="#top">Jihye Lee</a>
     <nav aria-label="Primary navigation">
-      <a href="#research">Research</a>
-      <a href="#selected-publications">Publications</a>
-      <a href="#cv">CV</a>
-      <a href="#about">About</a>
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#selected-publications">publications</a>
+      <a href="#news">news</a>
+      <a href="#cv">cv</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero hero-with-photo" aria-labelledby="hero-title">
-      <div class="hero-text">
-        <p class="eyebrow">Researcher · Human–Technology Interaction</p>
-        <h1 id="hero-title">Meet People<br>Where They Are.</h1>
-        <p class="hero-copy">I study people in the context of their lives, relationships, and changing needs—and what that means for the technologies designed to support them.</p>
-        <a class="text-link" href="#research">Explore the questions that drive my research <span aria-hidden="true">↓</span></a>
+    <section class="home-intro" id="about">
+      <div class="home-copy">
+        <p class="eyebrow">Human–Technology Interaction · Healthy Aging</p>
+        <h1>Meet People<br>Where They Are.</h1>
+        <p class="home-lede">I study how people's lives, relationships, and changing needs shape their experiences with technology—and how technology can better support them.</p>
+        <p class="home-role">Jihye Lee, Ph.D. · Senior Researcher, Seoul National University</p>
       </div>
-      <figure class="hero-photo">
-        <img src="jihye-profile.jpg.jpg" alt="Portrait of Jihye Lee">
-      </figure>
+      <figure class="home-photo"><img src="jihye-profile.jpg.jpg" alt="Portrait of Jihye Lee"></figure>
     </section>
 
-    <section class="questions" id="research" aria-labelledby="questions-title">
-      <div class="section-intro">
-        <p class="eyebrow">Research program</p>
-        <h2 id="questions-title">The questions that drive my research</h2>
-        <p>Rather than organizing my work by technology, I follow a set of questions about difference, interaction, and support.</p>
+    <section class="pathway">
+      <p class="eyebrow">How I got here</p>
+      <h2>From deploying technology to studying what happens after it arrives.</h2>
+      <div class="pathway-steps">
+        <div><span>01</span><strong>Deployment</strong><p>I began on the side that helps emerging technologies move into society.</p></div>
+        <div><span>02</span><strong>After adoption</strong><p>I became more interested in what actually happens once technology enters people's everyday lives.</p></div>
+        <div><span>03</span><strong>People differ</strong><p>The same technology did not create the same experience. Relationships, contexts, and support around it mattered.</p></div>
+        <div><span>04</span><strong>Support should differ</strong><p>That observation became a research program about how technology can respond to people without reducing them to an average user.</p></div>
       </div>
+    </section>
 
-      <div class="question-grid">
-        <article class="question">
-          <span class="number">01</span>
-          <h3>How do people's needs differ—and change?</h3>
-          <p>Relationships, everyday contexts, and needs differ across people and can change within the same person over time.</p>
-          <span class="topics">Social networks · EMA · Longitudinal research</span>
-        </article>
-
-        <article class="question">
-          <span class="number">02</span>
-          <h3>What happens when people meet technology?</h3>
-          <p>I examine how people experience, interpret, trust, and communicate with emerging technologies in real contexts.</p>
-          <span class="topics">Social robots · AI counseling · Identity</span>
-        </article>
-
-        <article class="question">
-          <span class="number">03</span>
-          <h3>How should support differ?</h3>
-          <p>I ask how differences in people's relationships, contexts, and needs can inform more appropriate forms of support.</p>
-          <span class="topics">Intervention design · Digital health · Participatory research</span>
-        </article>
-
-        <article class="question mirror">
-          <span class="number">↔</span>
-          <p class="mirror-label">A critical mirror</p>
-          <h3>When does tailoring become bias?</h3>
-          <p>If technology responds differently to different people, when is that responsiveness—and when does it become bias?</p>
-          <span class="topics">LLM behavior · Artificial identity · Responsible AI</span>
-        </article>
+    <section class="focus-section" id="projects">
+      <div class="focus-heading"><p class="eyebrow">What I'm working on</p><h2>Explore by research thread.</h2></div>
+      <div class="focus-grid">
+        <a class="focus-card" href="#aging-robots"><span>01</span><h3>Older Adults × Social Robots</h3><p>Relationships, connection, autonomy, and everyday life with social robots.</p><b>Explore →</b></a>
+        <a class="focus-card" href="#social-connection"><span>02</span><h3>Everyday Social Connection</h3><p>How relationships and support needs differ across people—and change over time.</p><b>Explore →</b></a>
+        <a class="focus-card" href="#digital-health"><span>03</span><h3>Digital Health × Equity</h3><p>How interventions should adapt when people's resources, channels, and contexts differ.</p><b>Explore →</b></a>
+        <a class="focus-card" href="#social-ai"><span>04</span><h3>Social AI × Identity</h3><p>How identity, alignment, trust, and bias shape human–AI interaction.</p><b>Explore →</b></a>
       </div>
+    </section>
+
+    <section class="project-threads">
+      <article class="thread" id="aging-robots"><p class="thread-tag">Older Adults × Social Robots</p><h2>What happens when social robots enter older adults' homes?</h2><p>My work follows social robots beyond deployment: how older adults interpret them, form—or do not form—relationships with them, and how care workers, family, and introduction practices shape sustained use.</p><div class="thread-links"><a href="#selected-publications">Geriatric Nursing paper ↓</a><span>Multi-agent social robots · SNU 2025–2031</span></div></article>
+      <article class="thread" id="social-connection"><p class="thread-tag">Everyday Social Connection</p><h2>People's relationships differ. Their needs also change within everyday life.</h2><p>Current studies use network-based clustering, ecological momentary assessment, and longitudinal panel data to understand heterogeneity in social connection and identify where support may be most useful.</p><div class="thread-links"><span>Network typology</span><span>14-day EMA</span><span>Five-wave national panel</span></div></article>
+      <article class="thread" id="digital-health"><p class="thread-tag">Digital Health × Equity</p><h2>Better average outcomes are not enough if support misses the people who need it.</h2><p>I use computational approaches to examine how preventive interventions can allocate limited resources while accounting for differences in media use, access, and vulnerability.</p><div class="thread-links"><a href="#selected-publications">JMIR paper ↓</a><span>Agent-based modeling</span></div></article>
+      <article class="thread" id="social-ai"><p class="thread-tag">Social AI × Identity</p><h2>When does adapting to people become alignment—and when does it become bias?</h2><p>This thread examines both sides of identity in human–AI interaction: how artificial agents present themselves, and how models respond differently to the identities of the people they interact with.</p><div class="thread-links"><a href="#selected-publications">DIS paper ↓</a><span>LLM ingroup sycophancy</span><span>AI counseling</span></div></article>
     </section>
 
     <section class="selected-publications" id="selected-publications">
-      <div class="pub-header">
-        <p class="eyebrow">Publications</p>
-        <h2>Selected publications</h2>
-      </div>
-
-      <article class="publication-row">
-        <a class="paper-thumb" href="Can%20social%20robots%20reduce%20the%20loneliness%20of%20older%20adults.pdf" target="_blank" aria-label="Open social robots paper PDF">
-          <canvas class="pdf-thumb" data-pdf="Can%20social%20robots%20reduce%20the%20loneliness%20of%20older%20adults.pdf"></canvas>
-        </a>
-        <div class="pub-copy">
-          <p class="pub-meta">Geriatric Nursing · 2025 · First author</p>
-          <h3>Can Social Robots Reduce the Loneliness of Older Adults?</h3>
-          <p class="pub-subtitle">Interaction and Communication between Social Robots and Older Adults</p>
-          <p class="pub-note">Long-term, real-world social robot use among older adults living alone, with attention to relationship formation and the role of care workers and family as mediators.</p>
-          <div class="pub-actions">
-            <a href="Can%20social%20robots%20reduce%20the%20loneliness%20of%20older%20adults.pdf" target="_blank">Paper</a>
-            <a href="https://doi.org/10.1016/j.gerinurse.2025.04.032" target="_blank" rel="noopener">DOI</a>
-            <a href="#research">Research story</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="publication-row">
-        <a class="paper-thumb" href="Channel%20Allocation%20and%20Equity%20in%20Preventive%20Campaigns%20for%20Older%20Adults.pdf" target="_blank" aria-label="Open digital health ABM paper PDF">
-          <canvas class="pdf-thumb" data-pdf="Channel%20Allocation%20and%20Equity%20in%20Preventive%20Campaigns%20for%20Older%20Adults.pdf"></canvas>
-        </a>
-        <div class="pub-copy">
-          <p class="pub-meta">Journal of Medical Internet Research · 2026 · First author</p>
-          <h3>Channel Allocation and Equity in Preventive Campaigns for Older Adults</h3>
-          <p class="pub-subtitle">Agent-Based Modeling Study</p>
-          <p class="pub-note">A data-driven simulation study of channel allocation, personalization, and equity trade-offs in preventive health campaigns for older adults.</p>
-          <div class="pub-actions">
-            <a href="Channel%20Allocation%20and%20Equity%20in%20Preventive%20Campaigns%20for%20Older%20Adults.pdf" target="_blank">Paper</a>
-            <a href="https://doi.org/10.2196/88429" target="_blank" rel="noopener">DOI</a>
-            <a href="#research">Research story</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="publication-row">
-        <a class="paper-thumb" href="Designing%20Artificial%20Identity%20The%20Identity%20Design%20Framework%20andResearch%20Agenda.pdf" target="_blank" aria-label="Open artificial identity paper PDF">
-          <canvas class="pdf-thumb" data-pdf="Designing%20Artificial%20Identity%20The%20Identity%20Design%20Framework%20andResearch%20Agenda.pdf"></canvas>
-        </a>
-        <div class="pub-copy">
-          <p class="pub-meta">ACM DIS · 2026</p>
-          <h3>Designing Artificial Identity</h3>
-          <p class="pub-subtitle">The Identity Design Framework and Research Agenda</p>
-          <p class="pub-note">An interdisciplinary framework for designing coherent and responsible artificial identities across individual, group, and societal levels.</p>
-          <div class="pub-actions">
-            <a href="Designing%20Artificial%20Identity%20The%20Identity%20Design%20Framework%20andResearch%20Agenda.pdf" target="_blank">Paper</a>
-            <a href="https://doi.org/10.1145/3800645.3812962" target="_blank" rel="noopener">DOI</a>
-            <a href="#research">Research story</a>
-          </div>
-        </div>
-      </article>
+      <div class="pub-header"><p class="eyebrow">Publications</p><h2>Selected publications</h2></div>
+      <article class="publication-row"><a class="paper-thumb" href="Can%20social%20robots%20reduce%20the%20loneliness%20of%20older%20adults.pdf" target="_blank"><canvas class="pdf-thumb" data-pdf="Can%20social%20robots%20reduce%20the%20loneliness%20of%20older%20adults.pdf"></canvas></a><div class="pub-copy"><p class="pub-meta">Geriatric Nursing · 2025 · First author</p><h3>Can Social Robots Reduce the Loneliness of Older Adults?</h3><p class="pub-subtitle">Interaction and Communication between Social Robots and Older Adults</p><div class="pub-actions"><a href="Can%20social%20robots%20reduce%20the%20loneliness%20of%20older%20adults.pdf" target="_blank">Paper</a><a href="https://doi.org/10.1016/j.gerinurse.2025.04.032" target="_blank">DOI</a></div></div></article>
+      <article class="publication-row"><a class="paper-thumb" href="Channel%20Allocation%20and%20Equity%20in%20Preventive%20Campaigns%20for%20Older%20Adults.pdf" target="_blank"><canvas class="pdf-thumb" data-pdf="Channel%20Allocation%20and%20Equity%20in%20Preventive%20Campaigns%20for%20Older%20Adults.pdf"></canvas></a><div class="pub-copy"><p class="pub-meta">Journal of Medical Internet Research · 2026 · First author</p><h3>Channel Allocation and Equity in Preventive Campaigns for Older Adults</h3><p class="pub-subtitle">Agent-Based Modeling Study</p><div class="pub-actions"><a href="Channel%20Allocation%20and%20Equity%20in%20Preventive%20Campaigns%20for%20Older%20Adults.pdf" target="_blank">Paper</a><a href="https://doi.org/10.2196/88429" target="_blank">DOI</a></div></div></article>
+      <article class="publication-row"><a class="paper-thumb" href="Designing%20Artificial%20Identity%20The%20Identity%20Design%20Framework%20andResearch%20Agenda.pdf" target="_blank"><canvas class="pdf-thumb" data-pdf="Designing%20Artificial%20Identity%20The%20Identity%20Design%20Framework%20andResearch%20Agenda.pdf"></canvas></a><div class="pub-copy"><p class="pub-meta">ACM DIS · 2026</p><h3>Designing Artificial Identity</h3><p class="pub-subtitle">The Identity Design Framework and Research Agenda</p><div class="pub-actions"><a href="Designing%20Artificial%20Identity%20The%20Identity%20Design%20Framework%20andResearch%20Agenda.pdf" target="_blank">Paper</a><a href="https://doi.org/10.1145/3800645.3812962" target="_blank">DOI</a></div></div></article>
+      <a class="more-link" href="#">All publications →</a>
     </section>
 
-    <section class="research-work" id="publications">
-      <div class="section-intro simple">
-        <p class="eyebrow">Selected research</p>
-        <h2>Research organized by the questions it answers</h2>
+    <section class="news-section" id="news">
+      <div class="news-heading"><p class="eyebrow">News</p><h2>Latest</h2></div>
+      <div class="news-list">
+        <div><time>Oct 2026</time><p><strong>Publication</strong> — Our agent-based modeling study on channel allocation and equity in preventive campaigns for older adults was published in <em>JMIR</em>.</p></div>
+        <div><time>Oct 2026</time><p><strong>Research</strong> — Our work on ingroup sycophancy in large language models is under review at ACL Rolling Review.</p></div>
+        <div><time>Nov 2026</time><p><strong>Conference</strong> — Presenting work on social relationship trajectories and socially assistive robot support at the Gerontological Society of America Annual Scientific Meeting.</p></div>
+        <div><time>2026</time><p><strong>Publication</strong> — Our Artificial Identity Design Framework was published at ACM DIS 2026.</p></div>
       </div>
-
-      <div class="research-group">
-        <div class="group-heading"><span>01</span><h3>How do people's needs differ—and change?</h3></div>
-        <div class="work-list">
-          <article class="work"><p class="status">In preparation</p><h4>Designing Relationship-Supportive Social Robots Through Network-Based Clustering of Older Adults</h4><p>Examining heterogeneity in older adults' social networks as a basis for relationship-sensitive support.</p></article>
-          <article class="work"><p class="status">In preparation</p><h4>Identifying Optimal Intervention Timing for Social Robots Through Ecological Momentary Assessment</h4><p>Using intensive longitudinal data to examine how social experiences and support needs change within everyday life.</p></article>
-          <article class="work"><p class="status">In preparation · Five-wave national panel</p><h4>When Poverty Does Not Lead to Despair</h4><p>Investigating protective factors against suicidal ideation among economically disadvantaged older adults.</p></article>
-        </div>
-      </div>
-
-      <div class="research-group">
-        <div class="group-heading"><span>02</span><h3>What happens when people meet technology?</h3></div>
-        <div class="work-list">
-          <article class="work featured"><p class="status">Geriatric Nursing · 2025 · First author</p><h4>Can Social Robots Reduce the Loneliness of Older Adults?</h4><p>Studied interaction and communication between older adults and home-based social robots, including the social context surrounding their use.</p></article>
-          <article class="work"><p class="status">IJHCI · Under review</p><h4>Trust and Self-Disclosure in AI Counseling</h4><p>A 300-participant experiment examining trust and self-disclosure in AI-mediated counseling.</p></article>
-          <article class="work"><p class="status">Korean Journal of Journalism & Communication Studies · 2022</p><h4>Self-Identity of Metaverse Users</h4><p>Explored how people perceive and express self-identity in an emerging virtual environment.</p></article>
-        </div>
-        <p class="led-to">Led to → If experiences differ across people and contexts, should support differ too?</p>
-      </div>
-
-      <div class="research-group">
-        <div class="group-heading"><span>03</span><h3>How should support differ?</h3></div>
-        <div class="work-list">
-          <article class="work featured"><p class="status">Journal of Medical Internet Research · 2026 · First author</p><h4>Channel Allocation and Equity in Preventive Campaigns for Older Adults</h4><p>Used agent-based modeling to examine how preventive campaign resources can be allocated across channels with attention to reach and equity.</p></article>
-          <article class="work"><p class="status">Current program · Seoul National University · 2025–2031</p><h4>Multi-Agent Social Robots for Older Adults</h4><p>Leading research on home-based social robots designed to support meaningful engagement, social connection, and autonomy.</p></article>
-          <article class="work"><p class="status">Current research</p><h4>Relationship-Supportive Design, Intervention Timing, and Participatory Scenarios</h4><p>Translating differences in relationships and everyday contexts into questions about what support should be offered, when, and in what form.</p></article>
-        </div>
-      </div>
-
-      <div class="research-group mirror-group">
-        <div class="group-heading"><span>↔</span><h3>When does tailoring become bias?</h3></div>
-        <div class="work-list">
-          <article class="work"><p class="status">ACL Rolling Review · Under review</p><h4>Ingroup Sycophancy in Large Language Models</h4><p>Benchmark-based evaluation across 3,349 items testing whether models conform differently to in-group and out-group users.</p></article>
-          <article class="work"><p class="status">ACM DIS 2026 · CORE A</p><h4>Designing Artificial Identity</h4><p>Contributed to a framework and research agenda for understanding how artificial agents are designed to present identity.</p></article>
-          <article class="work"><p class="status">In preparation · Systematic review</p><h4>Minimum Reporting Standards for Artificial Identity and Persona</h4><p>Developing clearer reporting standards for identity and persona in human–AI interaction research.</p></article>
-        </div>
-      </div>
+      <a class="more-link" href="#">All news →</a>
     </section>
 
-    <section class="placeholder compact" id="cv">
-      <h2>CV</h2>
-      <p>Coming next.</p>
-    </section>
-
-    <section class="north-star" id="about">
-      <p class="eyebrow">North star</p>
-      <h2>Supporting older adults' relationships and well-being.</h2>
-      <p>My methods and technologies may change. The long-term goal is consistent: understand people in the context of their actual lives, then turn that understanding into support that matters.</p>
-      <p class="bio">Jihye Lee, Ph.D. · Senior Researcher, Seoul National University</p>
-    </section>
+    <section class="cv-strip" id="cv"><p class="eyebrow">Curriculum vitae</p><h2>For the complete record.</h2><p>Appointments, publications, projects, funding, teaching, and prior professional experience.</p><span class="cv-coming">CV link coming next</span></section>
   </main>
 
-  <footer>
-    <span>© 2026 Jihye Lee</span>
-    <span>Built as a long-term academic home.</span>
-  </footer>
+  <footer><strong>Jihye Lee</strong><span>Senior Researcher · Seoul National University</span><span>© 2026</span></footer>
   <script type="module">
     import * as pdfjsLib from "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs";
     pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
