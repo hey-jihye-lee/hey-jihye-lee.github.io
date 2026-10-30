@@ -918,3 +918,29 @@ body{font-size:16px!important;line-height:1.6!important}
 .interest-hero h1{font-weight:300!important;font-size:2.65rem!important}
 .interest-copy h2,.interest-questions h2,.interest-related h2{font-weight:500!important}
 .project-card,.reference-card,.visual-pub,.news-page,.pub-page-list{font-family:"Roboto","Helvetica Neue",Arial,sans-serif!important}
+
+/* v3.1 typography: explicitly match al-folio/Robin-like system sans */
+html, body,
+button, input, textarea, select,
+.site-header, .sub-header, main, footer,
+.home-copy, .project-card, .visual-pub, .reference-card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+.alfolio-intro .home-copy h1,
+.page-title h1,
+.interest-hero h1,
+.focus-heading h2,
+.pub-header h2,
+.news-heading h2,
+.cv-strip h2,
+.card-title-row h2,
+.visual-pub-copy h2,
+.interest-copy h2,
+.interest-questions h2,
+.interest-related h2,
+.sub-name, .site-name {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+.alfolio-intro .home-copy h1 { font-weight:400!important; }
+.page-title h1,.interest-hero h1 { font-weight:300!important; }
+.card-title-row h2,.visual-pub-copy h2 { font-weight:500!important; }
