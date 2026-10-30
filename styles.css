@@ -699,3 +699,15 @@ body {
 .pub-subtitle { font-size:.9rem !important; }
 .news-list p { font-size:.91rem !important; }
 .news-list time { font-size:.79rem !important; }
+
+/* v2 true multi-page layout */
+.sub-header{width:min(calc(100% - 40px),900px);margin:0 auto;min-height:64px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee}
+.sub-name{font-size:1.18rem;font-weight:650;text-decoration:none;color:#222;letter-spacing:-.025em}
+.sub-header nav{display:flex;gap:18px}.sub-header nav a{font-size:.9rem;color:#444;text-decoration:none}.sub-header nav a.active{color:var(--accent);font-weight:500}.sub-header nav a:hover{color:var(--accent)}
+.sub-main,.sub-footer{width:min(calc(100% - 40px),900px);margin:0 auto}.sub-footer{padding:28px 0 40px;border-top:1px solid #eee;font-size:.72rem;color:#777}
+.page-title{padding:58px 0 34px;border-bottom:1px solid #eee}.page-title h1{margin:0 0 8px;font-size:2.4rem;font-weight:400;letter-spacing:-.045em}.page-title p{margin:0;color:#666;font-size:.95rem}
+.pub-page-list article{display:grid;grid-template-columns:75px 1fr;gap:24px;padding:25px 0;border-bottom:1px solid #eee}.pub-year{margin:2px 0;color:#777;font-size:.82rem}.pub-page-list h2{margin:0 0 6px;font-size:1.08rem;line-height:1.35;font-weight:600}.pub-page-list article div p{margin:4px 0;font-size:.88rem;color:#555}.pub-page-list a,.project-page a{color:var(--accent)}
+.project-page article{padding:38px 0;border-bottom:1px solid #eee}.project-kicker{margin:0 0 7px;color:var(--accent);font-size:.76rem;font-weight:600}.project-page h2{margin:0 0 10px;font-size:1.45rem;letter-spacing:-.025em}.project-page article>p:not(.project-kicker):not(.project-meta){max-width:720px;color:#555}.project-meta{font-size:.76rem;color:#777}
+.news-page{padding-bottom:40px}.news-page>div{display:grid;grid-template-columns:100px 1fr;gap:22px;padding:16px 0;border-bottom:1px solid #eee}.news-page time{font-size:.8rem;color:#777}.news-page p{margin:0;font-size:.92rem}
+.cv-page{padding:34px 0 80px}.cv-page p{max-width:650px;color:#555}
+@media(max-width:700px){.sub-header{align-items:flex-start;padding:18px 0}.sub-header nav{gap:10px;flex-wrap:wrap;justify-content:flex-end}.pub-page-list article{grid-template-columns:55px 1fr}.news-page>div{grid-template-columns:1fr;gap:3px}}
