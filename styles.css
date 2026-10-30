@@ -562,3 +562,43 @@ body {
  .home-photo{margin-top:30px !important}
  .focus-grid{grid-template-columns:1fr !important}
 }
+
+/* v1.3 — al-folio-inspired academic density */
+:root { --bg:#fff; --ink:#222; --muted:#666; --line:#e4e4e4; --accent:#0066cc; --max:900px; }
+html,body{background:#fff!important}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif!important;font-size:15px!important;line-height:1.6!important;color:#222!important}
+.site-header,main,footer{width:min(calc(100% - 40px),900px)!important}
+.site-header{min-height:64px!important;border-bottom:1px solid #eee!important}
+.site-name{font-size:1.12rem!important;font-weight:600!important;letter-spacing:-.02em!important}
+.new-header nav{gap:18px!important}.new-header nav a{font-size:.82rem!important;color:#555!important}.new-header nav a:hover{color:#06c!important}
+.alfolio-intro{display:grid!important;grid-template-columns:minmax(0,1fr) 150px!important;gap:44px!important;min-height:auto!important;padding:42px 0 50px!important;align-items:start!important}
+.alfolio-intro .home-copy h1{font-size:2rem!important;line-height:1.15!important;font-weight:600!important;letter-spacing:-.035em!important;margin:0 0 6px!important}
+.home-role{font-size:.86rem!important;color:#777!important;margin:0 0 22px!important}
+.home-bio{max-width:650px!important}.home-bio p{font-size:.96rem!important;line-height:1.68!important;color:#333!important;margin:0 0 12px!important}
+.home-photo,.home-photo img{width:150px!important}.home-photo img{height:200px!important;object-fit:cover!important;border-radius:3px!important}
+.profile-links{display:flex;gap:16px;margin-top:20px}.profile-links a{font-size:.82rem;color:#06c;text-decoration:none}.profile-links a:hover{text-decoration:underline}
+
+.focus-section{padding:40px 0 52px!important;border-top:1px solid #eee!important}
+.focus-heading{margin-bottom:20px!important}.focus-heading h2{font-size:1.25rem!important;font-weight:600!important;letter-spacing:-.02em!important;text-transform:none!important;margin:0 0 5px!important}
+.focus-instruction{font-size:.84rem!important;color:#777!important}
+.focus-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:0!important;border-top:1px solid #ddd!important}
+.focus-card,.focus-card:nth-child(odd),.focus-card:nth-child(even){min-height:150px!important;padding:18px 22px 22px 0!important;border:0!important;border-bottom:1px solid #ddd!important;border-radius:0!important;background:#fff!important;box-shadow:none!important;transform:none!important}
+.focus-card:nth-child(odd){border-right:1px solid #ddd!important;padding-right:28px!important}.focus-card:nth-child(even){padding-left:28px!important}
+.focus-card:hover{background:#f7faff!important;box-shadow:none!important;transform:none!important}
+.focus-card>span{font-size:.66rem!important;color:#888!important}.focus-card h3{font-size:1.08rem!important;line-height:1.25!important;font-weight:600!important;margin:12px 0 6px!important;color:#222!important}
+.focus-card:hover h3{color:#06c!important}.focus-card p{font-size:.82rem!important;line-height:1.5!important;color:#666!important;margin:0 0 25px!important}
+.focus-card b{position:static!important;display:inline!important;font-size:.7rem!important;text-transform:none!important;letter-spacing:0!important;color:#06c!important}
+
+.project-threads{border-top:0!important}.thread{padding:34px 0!important;border-bottom:1px solid #eee!important}.thread-tag{font-size:.67rem!important;letter-spacing:.06em!important;margin-bottom:9px!important;color:#777!important}
+.thread h2{font-size:1.35rem!important;line-height:1.25!important;font-weight:600!important;letter-spacing:-.025em!important;margin:0 0 10px!important;max-width:760px!important}
+.thread>p:not(.thread-tag){font-size:.9rem!important;line-height:1.6!important;color:#555!important;max-width:700px!important}.thread-links{margin-top:14px!important;gap:7px!important}
+.thread-links a,.thread-links span{font-size:.7rem!important;padding:3px 7px!important;border:1px solid #ddd!important;background:#fafafa!important;border-radius:3px!important}
+
+.selected-publications,.news-section,.cv-strip{padding:42px 0!important;border-top:1px solid #eee!important}.pub-header{margin-bottom:12px!important}.pub-header h2,.news-heading h2,.cv-strip h2{font-size:1.25rem!important;font-weight:600!important;letter-spacing:-.02em!important}
+.pub-header .eyebrow,.news-heading .eyebrow,.cv-strip .eyebrow{display:none!important}
+.publication-row{grid-template-columns:105px 1fr!important;gap:24px!important;padding:22px 0!important}.paper-thumb{width:105px!important;min-height:136px!important;box-shadow:0 2px 6px rgba(0,0,0,.08)!important}.pdf-thumb{width:105px!important;height:auto!important}
+.pub-meta{font-size:.66rem!important;letter-spacing:.04em!important;text-transform:none!important;margin:0 0 5px!important;color:#777!important}.pub-copy h3{font-size:1.03rem!important;line-height:1.3!important;font-weight:600!important;margin:0 0 3px!important}.pub-subtitle{font-size:.82rem!important;margin:0 0 8px!important;color:#555!important}.pub-actions{margin-top:10px!important}.pub-actions a{font-size:.66rem!important;padding:3px 7px!important;border:1px solid #ccc!important;text-transform:none!important;letter-spacing:0!important;color:#06c!important}.pub-actions a:hover{background:#f5f8fb!important;color:#06c!important}
+.more-link{font-size:.78rem!important;color:#06c!important;border:0!important}.news-list{margin-top:14px!important}.news-list>div{grid-template-columns:92px 1fr!important;gap:18px!important;padding:11px 0!important}.news-list time{font-size:.73rem!important;color:#777!important}.news-list p{font-size:.84rem!important;line-height:1.5!important}
+.cv-strip p{font-size:.88rem!important}.cv-coming{font-size:.7rem!important}
+footer{padding:24px 0 34px!important;font-size:.7rem!important;border-top:1px solid #eee!important}
+@media(max-width:700px){.site-header,main,footer{width:min(calc(100% - 28px),900px)!important}.alfolio-intro{display:block!important}.home-photo{margin-top:24px!important}.focus-grid{grid-template-columns:1fr!important}.focus-card,.focus-card:nth-child(odd),.focus-card:nth-child(even){border-right:0!important;padding:16px 0 20px!important}.publication-row{grid-template-columns:82px 1fr!important;gap:16px!important}.paper-thumb,.pdf-thumb{width:82px!important}.paper-thumb{min-height:106px!important}}
