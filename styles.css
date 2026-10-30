@@ -1019,3 +1019,68 @@ p, li, time, span { font-weight: 300; }
 .focus-card b {
   font-weight: 400 !important;
 }
+
+/* v3.4 final readability pass before portfolio PDF */
+body { font-weight:400 !important; }
+p, li, time { font-weight:400 !important; }
+
+/* light editorial section/page headings */
+.page-title h1,
+.interest-hero h1,
+.focus-heading h2,
+.pub-header h2,
+.news-heading h2,
+.cv-strip h2 {
+  font-weight:300 !important;
+}
+
+/* clear but restrained content titles */
+.focus-card h3,
+.card-title-row h2,
+.visual-pub-copy h2,
+.project-info h2,
+.project-page h2,
+.interest-copy h2,
+.interest-questions h2,
+.interest-related h2,
+.reference-card strong {
+  font-weight:500 !important;
+}
+
+/* readable prose */
+.home-role,
+.home-bio p,
+.current-note,
+.focus-card p,
+.card-body>p,
+.visual-authors,
+.visual-venue,
+.interest-lede,
+.interest-columns p,
+.interest-questions li,
+.reference-card p,
+.news-list p,
+.news-page p {
+  font-weight:400 !important;
+}
+
+/* emphasis stays subtle */
+.home-role strong,
+.current-note strong,
+.news-list strong,
+.news-page strong,
+.visual-authors strong,
+.pub-page-list strong {
+  font-weight:500 !important;
+}
+.current-note strong { color:#9f176f !important; }
+
+/* slightly improve long-form contrast */
+.home-bio p,
+.current-note,
+.interest-columns p,
+.reference-card p,
+.card-body>p:not(.card-meta),
+.visual-venue {
+  color:#454545 !important;
+}
