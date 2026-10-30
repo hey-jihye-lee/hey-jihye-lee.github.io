@@ -889,3 +889,32 @@ body{font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif!important}
 @media(max-width:650px){
  .research-interest-page .reference-grid{grid-template-columns:1fr!important}
 }
+
+/* v3 Robin/al-folio-inspired typography normalization */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+html,body{font-family:"Roboto","Helvetica Neue",Arial,sans-serif!important;color:#222!important}
+body{font-size:16px!important;line-height:1.6!important}
+.site-name,.sub-name,
+.alfolio-intro .home-copy h1,
+.page-title h1,
+.focus-heading h2,.pub-header h2,.news-heading h2,.cv-strip h2,
+.focus-card h3,.thread h2,.pub-copy h3,.project-page h2,.pub-page-list h2,
+.project-info h2,.card-title-row h2,
+.interest-hero h1,.interest-copy h2,.interest-questions h2,.interest-related h2,
+.visual-pub-copy h2{
+  font-family:"Roboto","Helvetica Neue",Arial,sans-serif!important;
+}
+.sub-name,.site-name{font-weight:400!important;font-size:1.18rem!important;letter-spacing:-.025em!important}
+.sub-name strong,.site-name strong{font-weight:700!important}
+.alfolio-intro .home-copy h1{font-weight:400!important;font-size:2.7rem!important;letter-spacing:-.045em!important}
+.alfolio-intro .home-copy h1 strong{font-weight:700!important}
+.page-title h1{font-weight:300!important;font-size:2.65rem!important;letter-spacing:-.04em!important}
+.new-header nav a,.sub-header nav a{font-family:"Roboto","Helvetica Neue",Arial,sans-serif!important;font-weight:400!important;font-size:.9rem!important}
+.new-header nav a.active,.sub-header nav a.active{font-weight:400!important;color:#c2188b!important}
+.home-role{font-weight:400!important}
+.home-bio p,.current-note{font-family:"Roboto","Helvetica Neue",Arial,sans-serif!important}
+.focus-heading h2,.pub-header h2,.news-heading h2,.cv-strip h2{font-weight:300!important;font-size:1.65rem!important}
+.focus-card h3,.card-title-row h2,.visual-pub-copy h2{font-weight:500!important}
+.interest-hero h1{font-weight:300!important;font-size:2.65rem!important}
+.interest-copy h2,.interest-questions h2,.interest-related h2{font-weight:500!important}
+.project-card,.reference-card,.visual-pub,.news-page,.pub-page-list{font-family:"Roboto","Helvetica Neue",Arial,sans-serif!important}
