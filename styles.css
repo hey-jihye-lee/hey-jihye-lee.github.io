@@ -735,3 +735,25 @@ body { font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif!important; 
   font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif!important;
 }
 @media(max-width:700px){.home-photo,.home-photo img{width:175px!important}.home-photo img{height:233px!important}}
+
+/* v2.2 IBM Plex + Sirui-inspired project list */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap');
+body{font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif!important}
+.alfolio-intro .home-copy h1,.page-title h1{font-family:"IBM Plex Serif",Georgia,serif!important;font-weight:500!important;letter-spacing:-.035em!important}
+.site-name,.sub-name{font-family:"IBM Plex Serif",Georgia,serif!important;font-weight:500!important}
+.new-header nav a,.sub-header nav a,.home-role,.home-bio,.current-note,.focus-card,.pub-copy,.news-list{font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif!important}
+.projects-title{padding-bottom:28px!important}
+.project-list{padding-bottom:50px}
+.project-entry{display:grid;grid-template-columns:190px minmax(0,1fr);gap:34px;padding:34px 0;border-bottom:1px solid #e5e5e5;align-items:start}
+.project-visual{width:190px;height:145px;overflow:hidden;background:#f3f3f3;display:flex;align-items:flex-end;padding:15px;box-sizing:border-box}
+.project-visual span{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.05rem;line-height:1.2;color:#fff}
+.visual-robot{background:linear-gradient(145deg,#315f78,#79a7b8)}
+.visual-ema{background:linear-gradient(145deg,#765b78,#b98da6)}
+.paper-preview{height:205px;padding:0;background:#f7f7f7;align-items:flex-start;justify-content:center;border:1px solid #e3e3e3}
+.project-pdf{display:block}
+.project-meta-top{margin:0 0 5px;color:#8a2b6d;font-size:.75rem;font-weight:500}
+.project-info h2{font-family:"IBM Plex Serif",Georgia,serif;margin:0 0 9px;font-size:1.42rem;line-height:1.25;font-weight:500;letter-spacing:-.02em}
+.project-info>p:not(.project-meta-top){margin:0;max-width:620px;color:#4e4e4e;font-size:.94rem;line-height:1.62}
+.project-subwork{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:15px;align-items:center}.project-subwork strong{font-size:.74rem;margin-right:3px}.project-subwork span{font-size:.72rem;padding:3px 7px;background:#f6f6f6;border:1px solid #e3e3e3;border-radius:2px;color:#555}
+.project-actions{display:flex;gap:12px;margin-top:15px}.project-actions a{font-size:.76rem;color:#8a2b6d;text-decoration:none;border-bottom:1px solid #d8a9c8}.project-actions a:hover{color:#5e1748}
+@media(max-width:700px){.project-entry{grid-template-columns:110px 1fr;gap:18px}.project-visual{width:110px;height:100px}.paper-preview{height:145px}.project-pdf{width:110px!important;height:auto!important}.project-info h2{font-size:1.15rem}}
