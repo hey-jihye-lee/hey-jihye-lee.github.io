@@ -780,3 +780,9 @@ body{font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif!important}
 .pub-section-title{grid-column:1/-1;margin:34px 0 4px!important;padding-bottom:10px;border-bottom:1px solid #ddd;font-family:"IBM Plex Sans",Arial,sans-serif!important;font-size:1.15rem!important;font-weight:600!important;text-transform:lowercase;color:#222}
 .pub-section-title:first-child{margin-top:28px!important}.pub-section-title.secondary{margin-top:48px!important}
 .full-publications>article a{color:#8a2b6d;text-decoration:none}.full-publications>article a:hover{text-decoration:underline}
+
+/* v2.4 Robin-style visual publications */
+.visual-pub-list{padding:18px 0 55px}.visual-pub{display:grid;grid-template-columns:145px 1fr;gap:30px;padding:28px 0;border-bottom:1px solid #eee;align-items:start}
+.visual-pub-thumb{display:block;width:145px;background:#fff;border:1px solid #ddd;box-shadow:0 3px 10px rgba(0,0,0,.09);overflow:hidden}.pub-pdf-thumb{display:block;width:145px;height:auto}
+.visual-pub-year{margin:0 0 4px;color:#8a2b6d;font-size:.76rem;font-weight:500}.visual-pub-copy h2{font-family:"IBM Plex Sans",Arial,sans-serif;margin:0 0 7px;font-size:1.12rem;line-height:1.35;font-weight:600;letter-spacing:-.015em}.visual-authors,.visual-venue{margin:3px 0;font-size:.86rem;line-height:1.5}.visual-authors{color:#333}.visual-venue{color:#666;font-style:italic}.visual-actions{display:flex;gap:8px;margin-top:12px}.visual-actions a{font-size:.72rem;padding:4px 9px;border:1px solid #b9b9b9;border-radius:2px;color:#8a2b6d;text-decoration:none}.visual-actions a:hover{background:#fff5fb;border-color:#c98cb6}
+@media(max-width:600px){.visual-pub{grid-template-columns:90px 1fr;gap:17px}.visual-pub-thumb,.pub-pdf-thumb{width:90px!important}.visual-pub-copy h2{font-size:1rem}}
