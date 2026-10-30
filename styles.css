@@ -647,3 +647,55 @@ footer{padding:24px 0 34px!important;font-size:.7rem!important;border-top:1px so
 .thread-tag { color:var(--accent)!important; }
 .news-list strong { color:#333; }
 @media(max-width:700px){.home-header .site-name{display:none!important}}
+
+/* v1.5 — readable academic typography + no duplicate name on About */
+.home-header { justify-content:flex-end !important; }
+.home-header .site-name { display:none !important; }
+
+/* Inter-like system stack: crisp, professional, highly readable */
+body {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size:16px !important;
+  line-height:1.65 !important;
+}
+.new-header nav a { font-size:.9rem !important; }
+.alfolio-intro .home-copy h1 {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size:2.8rem !important;
+  font-weight:650 !important;
+  letter-spacing:-.045em !important;
+}
+.home-role { font-size:1.04rem !important; line-height:1.5 !important; }
+.home-bio p { font-size:1.05rem !important; line-height:1.75 !important; }
+.current-note { font-size:.97rem !important; line-height:1.6 !important; }
+.profile-links a { font-size:.9rem !important; }
+
+.focus-heading h2,.pub-header h2,.news-heading h2,.cv-strip h2 {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size:1.7rem !important;
+  font-weight:600 !important;
+  letter-spacing:-.03em !important;
+}
+.focus-instruction { font-size:.92rem !important; }
+.focus-card h3 {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size:1.18rem !important;
+  font-weight:600 !important;
+}
+.focus-card p { font-size:.9rem !important; }
+.focus-card b { font-size:.76rem !important; }
+
+.thread h2 {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size:1.55rem !important;
+  font-weight:600 !important;
+}
+.thread>p:not(.thread-tag) { font-size:.97rem !important; }
+.pub-copy h3 {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size:1.12rem !important;
+  font-weight:600 !important;
+}
+.pub-subtitle { font-size:.9rem !important; }
+.news-list p { font-size:.91rem !important; }
+.news-list time { font-size:.79rem !important; }
