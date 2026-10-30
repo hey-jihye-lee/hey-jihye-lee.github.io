@@ -822,3 +822,70 @@ body{font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif!important}
 .reference-card strong{display:block;color:#222;font-size:.98rem;line-height:1.3}.reference-card p{margin:7px 0 0;color:#666;font-size:.8rem;line-height:1.45}
 .ref-arrow{position:absolute;right:15px;top:15px;color:#8a2b6d;font-size:1rem}
 @media(max-width:650px){.interest-columns,.reference-grid{grid-template-columns:1fr}.interest-hero h1{font-size:2.15rem}}
+
+/* v2.7 hard reset for research-interest reference cards */
+.research-interest-page .reference-grid{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:14px!important;
+}
+.research-interest-page .reference-grid a.reference-card,
+.research-interest-page .reference-grid a.reference-card:link,
+.research-interest-page .reference-grid a.reference-card:visited{
+  position:relative!important;
+  display:block!important;
+  min-height:150px!important;
+  padding:20px 46px 20px 20px!important;
+  box-sizing:border-box!important;
+  border:1px solid #dcdcdc!important;
+  border-radius:8px!important;
+  background:#fff!important;
+  color:#222!important;
+  text-decoration:none!important;
+  box-shadow:none!important;
+}
+.research-interest-page .reference-grid a.reference-card:hover{
+  border-color:#b7669b!important;
+  background:#fffafd!important;
+  transform:translateY(-2px)!important;
+  box-shadow:0 5px 14px rgba(0,0,0,.05)!important;
+  text-decoration:none!important;
+}
+.research-interest-page .reference-card .ref-type{
+  display:block!important;
+  margin:0 0 11px!important;
+  color:#8a2b6d!important;
+  font-size:.68rem!important;
+  line-height:1.2!important;
+  font-weight:600!important;
+  letter-spacing:.045em!important;
+  text-decoration:none!important;
+}
+.research-interest-page .reference-card strong{
+  display:block!important;
+  margin:0!important;
+  color:#202020!important;
+  font-size:1.02rem!important;
+  line-height:1.35!important;
+  font-weight:600!important;
+  text-decoration:none!important;
+}
+.research-interest-page .reference-card p{
+  display:block!important;
+  margin:9px 0 0!important;
+  color:#666!important;
+  font-size:.82rem!important;
+  line-height:1.5!important;
+  text-decoration:none!important;
+}
+.research-interest-page .reference-card .ref-arrow{
+  position:absolute!important;
+  top:18px!important;
+  right:18px!important;
+  color:#8a2b6d!important;
+  font-size:1rem!important;
+  text-decoration:none!important;
+}
+@media(max-width:650px){
+ .research-interest-page .reference-grid{grid-template-columns:1fr!important}
+}
