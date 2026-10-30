@@ -757,3 +757,21 @@ body{font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif!important}
 .project-subwork{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:15px;align-items:center}.project-subwork strong{font-size:.74rem;margin-right:3px}.project-subwork span{font-size:.72rem;padding:3px 7px;background:#f6f6f6;border:1px solid #e3e3e3;border-radius:2px;color:#555}
 .project-actions{display:flex;gap:12px;margin-top:15px}.project-actions a{font-size:.76rem;color:#8a2b6d;text-decoration:none;border-bottom:1px solid #d8a9c8}.project-actions a:hover{color:#5e1748}
 @media(max-width:700px){.project-entry{grid-template-columns:110px 1fr;gap:18px}.project-visual{width:110px;height:100px}.paper-preview{height:145px}.project-pdf{width:110px!important;height:auto!important}.project-info h2{font-size:1.15rem}}
+
+/* v2.3 visual project cards — publications kept separate */
+.project-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:30px 0 55px}
+.project-card{background:#f5f6f7;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-height:430px;transition:transform .16s ease,box-shadow .16s ease}
+.project-card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.card-image{height:155px;margin:10px 10px 0;border-radius:5px;display:flex;align-items:flex-end;padding:14px;box-sizing:border-box;overflow:hidden}
+.card-image span{font-family:"IBM Plex Sans",Arial,sans-serif;color:#fff;font-size:1rem;font-weight:500;line-height:1.2}
+.card-robots{background:linear-gradient(135deg,#486b7b,#91b1bd)}
+.card-connection{background:linear-gradient(135deg,#695d83,#a9a0c1)}
+.card-health{background:linear-gradient(135deg,#477867,#96b9a9)}
+.card-identity{background:linear-gradient(135deg,#805f6c,#c49aa9)}
+.card-bias{background:linear-gradient(135deg,#5b6680,#9aa7c2)}
+.card-counseling{background:linear-gradient(135deg,#806b50,#c1a77f)}
+.card-body{padding:18px 20px 22px;display:flex;flex-direction:column;flex:1}
+.card-title-row{display:flex;gap:10px;justify-content:space-between;align-items:flex-start}.card-title-row h2{font-family:"IBM Plex Sans",Arial,sans-serif;margin:0;font-size:1.15rem;line-height:1.25;font-weight:600;letter-spacing:-.02em}
+.card-plus{flex:0 0 34px;width:34px;height:34px;border-radius:50%;background:#e3e6e8;display:grid;place-items:center;font-size:1.35rem;font-weight:300;color:#555}
+.card-meta{margin:15px 0 10px;font-size:.76rem;font-weight:500;color:#444}.card-body>p:not(.card-meta){margin:0 0 18px;font-size:.86rem;line-height:1.55;color:#62676a}.card-body>a{margin-top:auto;color:#315f87;font-size:.82rem;text-decoration:none;border-bottom:1px solid #315f87;width:max-content}.card-body>a:hover{color:var(--accent);border-color:var(--accent)}
+@media(max-width:850px){.project-card-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.project-card-grid{grid-template-columns:1fr}.project-card{min-height:390px}}
