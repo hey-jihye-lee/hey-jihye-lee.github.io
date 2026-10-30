@@ -969,3 +969,53 @@ button, input, textarea, select,
   font-size: .98rem !important;
   line-height: 1.65 !important;
 }
+
+/* v3.3 restrained weight system — emphasis without heavy bold */
+body { font-weight: 300 !important; }
+p, li, time, span { font-weight: 300; }
+
+/* reserve real emphasis for the site name only */
+.site-name, .sub-name { font-weight: 300 !important; }
+.site-name strong, .sub-name strong { font-weight: 500 !important; }
+
+/* headings: lighter editorial hierarchy */
+.alfolio-intro .home-copy h1 { font-weight: 400 !important; }
+.page-title h1, .interest-hero h1 { font-weight: 300 !important; }
+.focus-heading h2, .pub-header h2, .news-heading h2, .cv-strip h2 { font-weight: 300 !important; }
+.focus-card h3,
+.card-title-row h2,
+.visual-pub-copy h2,
+.project-info h2,
+.project-page h2,
+.interest-copy h2,
+.interest-questions h2,
+.interest-related h2 { font-weight: 400 !important; }
+
+/* body emphasis: no chunky bold */
+.home-role strong,
+.current-note strong,
+.news-list strong,
+.news-page strong,
+.visual-authors strong,
+.pub-page-list strong,
+.reference-card strong,
+.project-subwork strong {
+  font-weight: 400 !important;
+}
+.current-note strong { color: #9f176f !important; }
+.home-role strong { color: #333 !important; }
+.visual-authors strong { color: #222 !important; }
+
+/* labels use color/spacing rather than weight */
+.project-meta-top,
+.card-meta,
+.status-chip,
+.pub-badge,
+.ref-type,
+.interest-index,
+.visual-pub-year {
+  font-weight: 400 !important;
+}
+.focus-card b {
+  font-weight: 400 !important;
+}
