@@ -1283,3 +1283,67 @@ strong, b { font-weight:400 !important; }
 @media(max-width:650px){
  .current-note{grid-template-columns:1fr!important;gap:3px!important}
 }
+
+/* v3.8 restore the typography the user preferred: Source Sans 3 */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap');
+
+/* HOME: one family, only light/regular weights */
+.home-copy,
+.home-copy *,
+.current-note,
+.current-note *,
+.profile-links,
+.profile-links *,
+.focus-section,
+.focus-section * {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif !important;
+}
+
+.alfolio-intro .home-copy h1 {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif !important;
+  font-size:2.55rem !important;
+  line-height:1.08 !important;
+  font-weight:300 !important;
+  letter-spacing:-.035em !important;
+}
+.home-role {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif !important;
+  font-size:1rem !important;
+  line-height:1.5 !important;
+  font-weight:300 !important;
+  color:#555 !important;
+}
+.home-bio p {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif !important;
+  font-size:1.03rem !important;
+  line-height:1.72 !important;
+  font-weight:300 !important;
+  color:#444 !important;
+}
+.current-note,
+.current-note p,
+.current-label {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif !important;
+  font-weight:300 !important;
+}
+.current-note p {
+  font-size:.98rem !important;
+  color:#444 !important;
+}
+.current-label { color:#c2188b !important; }
+
+/* This is the reference style the user liked */
+.focus-heading h2 {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif !important;
+  font-weight:300 !important;
+  font-size:1.65rem !important;
+}
+.focus-instruction {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif !important;
+  font-weight:300 !important;
+  font-size:.92rem !important;
+}
+.profile-links a {
+  font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif !important;
+  font-weight:300 !important;
+}
