@@ -1148,3 +1148,58 @@ p, li, time { font-weight:400 !important; }
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif !important;
   font-weight: 300 !important;
 }
+
+/* v3.6 weight experiment: preserve the light typeface character */
+body { font-weight:300 !important; }
+strong, b { font-weight:400 !important; }
+
+/* Name: size, not boldness */
+.alfolio-intro .home-copy h1 {
+  font-weight:300 !important;
+}
+.site-name, .sub-name {
+  font-weight:300 !important;
+}
+.site-name strong, .sub-name strong {
+  font-weight:400 !important;
+}
+
+/* Identity line: no bold jump */
+.home-role,
+.home-role strong {
+  font-weight:300 !important;
+}
+.home-role strong {
+  color:#222 !important;
+}
+
+/* Prose */
+.home-bio p,
+.current-note,
+.current-note strong {
+  font-weight:300 !important;
+}
+.current-note strong {
+  color:#c2188b !important;
+}
+
+/* Content titles: only a subtle step up */
+.focus-card h3,
+.card-title-row h2,
+.visual-pub-copy h2,
+.reference-card strong,
+.interest-copy h2,
+.interest-questions h2,
+.interest-related h2 {
+  font-weight:400 !important;
+}
+
+/* Labels/status: color instead of bold */
+.status-chip,
+.pub-badge,
+.ref-type,
+.interest-index,
+.visual-pub-year,
+.card-meta {
+  font-weight:400 !important;
+}
