@@ -1203,3 +1203,83 @@ strong, b { font-weight:400 !important; }
 .card-meta {
   font-weight:400 !important;
 }
+
+/* v3.7 exact Home reset: use the same visual language as research interests */
+.alfolio-intro .home-copy h1,
+.home-role,
+.home-bio p,
+.current-note,
+.current-note p,
+.current-label,
+.profile-links a {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Name uses the same light heading logic, only larger */
+.alfolio-intro .home-copy h1 {
+  font-size: 2.35rem !important;
+  line-height: 1.12 !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.035em !important;
+  color: #222 !important;
+  margin: 0 0 12px !important;
+}
+
+/* Identity line mirrors the small text under research interests */
+.home-role {
+  font-size: .94rem !important;
+  line-height: 1.55 !important;
+  font-weight: 300 !important;
+  letter-spacing: 0 !important;
+  color: #666 !important;
+  margin: 0 0 26px !important;
+}
+
+/* Intro: one consistent readable tone */
+.home-bio p {
+  font-size: .98rem !important;
+  line-height: 1.72 !important;
+  font-weight: 300 !important;
+  letter-spacing: 0 !important;
+  color: #4f4f4f !important;
+}
+
+/* Current: only the label is accent-colored. No mixed colors inside the sentence. */
+.current-note {
+  display: grid !important;
+  grid-template-columns: 58px minmax(0,1fr) !important;
+  gap: 14px !important;
+  margin-top: 25px !important;
+  padding: 14px 0 14px 16px !important;
+  border-left: 3px solid #c2188b !important;
+  background: transparent !important;
+  color: #4f4f4f !important;
+}
+.current-label {
+  color: #c2188b !important;
+  font-size: .9rem !important;
+  line-height: 1.65 !important;
+  font-weight: 300 !important;
+}
+.current-note p {
+  margin: 0 !important;
+  color: #4f4f4f !important;
+  font-size: .94rem !important;
+  line-height: 1.65 !important;
+  font-weight: 300 !important;
+}
+.current-note p strong,
+.current-note strong {
+  color: inherit !important;
+  font-weight: 300 !important;
+}
+
+/* quiet secondary links */
+.profile-links a {
+  color: #c2188b !important;
+  font-size: .86rem !important;
+  font-weight: 300 !important;
+}
+@media(max-width:650px){
+ .current-note{grid-template-columns:1fr!important;gap:3px!important}
+}
