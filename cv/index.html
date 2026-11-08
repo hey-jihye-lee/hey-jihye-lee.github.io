@@ -1,3 +1,96 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CV — Jihye Lee</title><link rel="stylesheet" href="/styles.css"></head><body><header class="sub-header"><a class="sub-name" href="/"><strong>Jihye</strong> Lee</a><nav><a href="/">about</a><a href="/publications/">publications</a><a href="/news/">news</a><a href="/projects/">projects</a><a class="active" href="/JihyeLEE_CV.pdf" target="_blank">cv</a></nav></header><main class="sub-main">
-<section class="page-title"><h1>cv</h1><p>Curriculum vitae of Jihye Lee.</p></section>
-<section class="cv-page"><p>The downloadable CV will be linked here. For now, this page establishes the permanent CV URL and navigation structure.</p></section></main><footer class="sub-footer"><span>© 2026 Jihye Lee</span></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CV — Jihye Lee</title>
+<meta name="description" content="Curriculum vitae of Jihye Lee: appointments, education, publications, funding, teaching, awards, and service.">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="sub-header"><a class="sub-name" href="/"><strong>Jihye</strong> Lee</a><nav><a href="/">about</a><a href="/publications/">publications</a><a href="/news/">news</a><a href="/projects/">projects</a><a class="active" href="/cv/">cv</a></nav></header>
+<main class="sub-main">
+<section class="page-title"><h1>cv</h1><p>Research, teaching, funding, awards, and service. The PDF is the version of record.</p></section>
+<div class="cv-top"><a class="cv-download" id="cv-pdf" href="/JihyeLEE_CV.pdf" target="_blank">Full CV (PDF)</a><span class="cv-updated" id="cv-updated"></span></div>
+<div class="cv-layout">
+  <nav class="cv-toc" id="cv-toc" aria-label="CV sections"></nav>
+  <div class="cv-body" id="cv-body"><p class="cv-error">Loading…</p></div>
+</div>
+</main>
+<footer class="sub-footer"><span>© 2026 Jihye Lee</span></footer>
+<script>
+(async function () {
+  const body = document.getElementById("cv-body");
+  const toc = document.getElementById("cv-toc");
+  let cv;
+  try {
+    cv = await (await fetch("/cv.json", { cache: "no-cache" })).json();
+  } catch (e) {
+    body.innerHTML = '<p class="cv-error">The CV could not be loaded. Please open the <a href="/JihyeLEE_CV.pdf">PDF version</a>.</p>';
+    return;
+  }
+
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  document.getElementById("cv-updated").textContent = cv.updated ? "Last updated " + cv.updated : "";
+  if (cv.pdf) document.getElementById("cv-pdf").href = cv.pdf;
+
+  const entry = it => `
+    <div class="cv-entry">
+      <div class="cv-period">${esc(it.period || "")}</div>
+      <div>
+        ${it.role ? `<div class="cv-role">${esc(it.role)}</div>` : ""}
+        ${it.org ? `<div class="cv-org">${esc(it.org)}</div>` : ""}
+        ${it.place ? `<div class="cv-place">${esc(it.place)}</div>` : ""}
+        ${it.note ? `<div class="cv-note">${esc(it.note)}</div>` : ""}
+        ${it.bullets && it.bullets.length ? `<ul>${it.bullets.map(b => `<li>${esc(b)}</li>`).join("")}</ul>` : ""}
+      </div>
+    </div>`;
+
+  const render = {
+    timeline: s => s.items.map(entry).join(""),
+    "grouped-timeline": s => s.groups.map(g => `<h3 class="cv-group">${esc(g.label)}</h3>${g.items.map(entry).join("")}`).join(""),
+    list: s => `<ol class="cv-list">${s.items.map(i => `<li>${i}</li>`).join("")}</ol>`,
+    "grouped-list": s => s.groups.map(g => `<h3 class="cv-group">${esc(g.label)}</h3><ol class="cv-list">${g.items.map(i => `<li>${i}</li>`).join("")}</ol>`).join(""),
+    "grouped-inline": s => s.groups.map(g => `<h3 class="cv-group">${esc(g.label)}</h3><ul class="cv-inline">${g.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul>`).join("")
+  };
+
+  const b = cv.basics || {};
+  let html = `
+    <section class="cv-section" id="basics">
+      <h2>Basics</h2>
+      <div class="cv-basics">
+        <div class="cv-name">${esc(b.name || "")}</div>
+        <div>${esc(b.title || "")}</div>
+        <div class="cv-tagline">${esc(b.tagline || "")}</div>
+        <div class="cv-contact">
+          ${b.email ? `<a href="mailto:${esc(b.email)}">${esc(b.email)}</a>` : ""}
+          ${(b.links || []).map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("")}
+          ${b.location ? `<span>${esc(b.location)}</span>` : ""}
+        </div>
+        ${b.summary ? `<p class="cv-summary">${esc(b.summary)}</p>` : ""}
+      </div>
+    </section>`;
+
+  const tocItems = [{ id: "basics", title: "Basics" }];
+  for (const s of cv.sections || []) {
+    const fn = render[s.type];
+    if (!fn) continue;
+    tocItems.push({ id: s.id, title: s.title });
+    html += `<section class="cv-section" id="${esc(s.id)}"><h2>${esc(s.title)}</h2>${s.intro ? `<p class="cv-intro">${s.intro}</p>` : ""}${fn(s)}</section>`;
+  }
+  body.innerHTML = html;
+  toc.innerHTML = tocItems.map(t => `<a href="#${esc(t.id)}">${esc(t.title)}</a>`).join("");
+
+  const links = [...toc.querySelectorAll("a")];
+  const sections = tocItems.map(t => document.getElementById(t.id));
+  const mark = () => {
+    const y = window.scrollY + 120;
+    let cur = sections[0];
+    for (const sec of sections) if (sec && sec.offsetTop <= y) cur = sec;
+    links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + cur.id));
+  };
+  window.addEventListener("scroll", mark, { passive: true });
+  mark();
+})();
+</script>
+</body>
+</html>

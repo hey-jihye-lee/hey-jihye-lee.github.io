@@ -1,0 +1,245 @@
+{
+  "updated": "November 2026",
+  "pdf": "/JihyeLEE_CV.pdf",
+  "basics": {
+    "name": "Jihye Lee, Ph.D.",
+    "title": "Senior Researcher, Seoul National University",
+    "tagline": "Human–Technology Interaction Researcher · Social robotics, digital health, social AI, and healthy aging",
+    "location": "Seoul, South Korea",
+    "email": "jihyelee.123@snu.ac.kr",
+    "links": [
+      { "label": "ORCID 0009-0000-3183-1294", "url": "https://orcid.org/0009-0000-3183-1294" },
+      { "label": "Scopus Author ID 59182388500", "url": "https://www.scopus.com/authid/detail.uri?authorId=59182388500" }
+    ],
+    "summary": "I study how people experience emerging technologies in everyday life, with a particular focus on older adults, social connection, and well-being. My work spans social robots, digital health, and social AI, and asks how technology can meet people where they are rather than treating them as average users."
+  },
+  "sections": [
+    {
+      "id": "appointments",
+      "title": "Academic and research appointments",
+      "type": "timeline",
+      "items": [
+        {
+          "period": "Oct 2025 – present",
+          "role": "Senior Researcher",
+          "org": "Visual Arts Institute, Seoul National University",
+          "place": "Seoul, South Korea",
+          "bullets": [
+            "One of three senior researchers leading the older adult–robot interaction workstream in a six-year, KRW 3.0 billion national program on multi-agent social robot systems.",
+            "Design and evaluate home-based social robots that support older adults' meaningful engagement, social connection, and autonomy.",
+            "Mentor six master's and doctoral students in study design, field research, and quantitative analysis."
+          ]
+        },
+        {
+          "period": "Oct 2025 – present",
+          "role": "Adjunct Researcher",
+          "org": "AIX School, Gwangju Institute of Science and Technology (GIST)",
+          "place": "Gwangju, South Korea",
+          "bullets": [
+            "Investigate social and cultural bias in large language models through benchmark-based evaluation across 3,349 items, testing whether models conform differently to in-group and out-group users.",
+            "Mentor seven master's and doctoral students in research design, computational analysis, and academic writing."
+          ]
+        },
+        {
+          "period": "Feb 2024 – Sep 2025",
+          "role": "Researcher and Lead Project Coordinator",
+          "org": "AIX School, Gwangju Institute of Science and Technology (GIST)",
+          "place": "Gwangju, South Korea",
+          "bullets": [
+            "Coordinated an AI-based analysis platform translating international news into evidence for national policymaking."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "type": "timeline",
+      "items": [
+        {
+          "period": "2020 – 2024",
+          "role": "Ph.D. in Communication",
+          "org": "Chonnam National University",
+          "place": "Gwangju, South Korea",
+          "note": "Thesis: Research on the Interaction and Communication Characteristics between Social Robots and Older Adults: Can Social Robots Reduce the Loneliness of Older Adults?"
+        },
+        {
+          "period": "2016 – 2018",
+          "role": "M.S. in Arts and Cultural Management",
+          "org": "Chung-Ang University",
+          "place": "Seoul, South Korea",
+          "note": "Thesis: Strategy and Competitiveness of Webtoon Platforms: Centered on the Leading Platforms in Korea"
+        },
+        {
+          "period": "2012 – 2015",
+          "role": "B.A. in Communication",
+          "org": "Chonnam National University",
+          "place": "Gwangju, South Korea"
+        }
+      ]
+    },
+    {
+      "id": "teaching",
+      "title": "Teaching",
+      "type": "timeline",
+      "items": [
+        {
+          "period": "Mar 2026 – present",
+          "role": "Lecturer",
+          "org": "School of Smart Convergence, Hanyang University ERICA",
+          "place": "Ansan, South Korea",
+          "bullets": [
+            "Teach Digital Health Design, covering user-centered design for health technologies from needs assessment through prototyping and evaluation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "publications",
+      "title": "Peer-reviewed publications",
+      "type": "list",
+      "intro": "Seven peer-reviewed publications (three in SCIE/SSCI Q1 journals or CORE A venues, four in Korean KCI journals). Full details, PDFs, and abstracts are on the <a href=\"/publications/\">publications page</a>.",
+      "items": [
+        "Bransky, K., Sweetser, P., Holthaus, P., Laban, G., Winkle, K., Akalin, N., Ashok, A., <b>Lee, J.</b>, et al. (2026). Designing Artificial Identity: The Identity Design Framework and Research Agenda. <i>Proceedings of the ACM Designing Interactive Systems Conference (DIS '26)</i>. CORE A.",
+        "<b>Lee, J.</b>, Park, J., Kim, Y., &amp; Kong, D. (2026). Channel Allocation and Equity in Preventive Campaigns for Older Adults: Agent-Based Modeling Study. <i>Journal of Medical Internet Research</i>, e88429. SCIE Q1.",
+        "<b>Lee, J.</b>, &amp; Joo, C. (2025). Can Social Robots Reduce the Loneliness of Older Adults? Interaction and Communication between Social Robots and Older Adults. <i>Geriatric Nursing</i>, 64, 103359. SCIE/SSCI Q1.",
+        "Joo, C., &amp; <b>Lee, J.</b> (2024). Identifying AI Ethical Issues in the Media Content Sector through the Analysis of AI Ethics Policies of Media Content Companies. <i>Broadcasting &amp; Communication</i>, 25(3), 5–43. In Korean.",
+        "Yang, H., &amp; <b>Lee, J.</b> (2023). The Impact of Encountering Hate Speech toward Jeolla-do on the Reinforcement of Stereotypes of Jeolla-do and the Use of Hate Speech. <i>Locality &amp; Communication</i>, 27(1), 34–65. In Korean.",
+        "<b>Lee, J.</b>, &amp; Joo, C. (2022). A Study on the Perception of Self-Identity of Metaverse Users. <i>Korean Journal of Journalism &amp; Communication Studies</i>, 66(3), 92–138. In Korean; KCI Excellent.",
+        "<b>Lee, J.</b>, &amp; Limb, S. (2018). A Study on Strategies of Korean Webtoon Platforms. <i>Journal of Arts Management and Policy</i>, 47, 31–63. In Korean."
+      ]
+    },
+    {
+      "id": "manuscripts",
+      "title": "Manuscripts under review and in preparation",
+      "type": "grouped-list",
+      "groups": [
+        {
+          "label": "Under review",
+          "items": [
+            "Kim, D., <b>Lee, J.</b>, et al. Ingroup Sycophancy in Large Language Models: Relational Alignment Bias under Minimal Group Conditions. Submitted to the 41st AAAI Conference on Artificial Intelligence (AAAI-27).",
+            "<b>Lee, J.</b>, Kim, J., &amp; Kim, Y. Trust and Self-Disclosure in AI Counseling. Submitted to the <i>International Journal of Human–Computer Interaction</i>."
+          ]
+        },
+        {
+          "label": "In preparation",
+          "items": [
+            "<b>Lee, J.</b>, Han, J., Kim, Y., &amp; Yoon, S. Designing Relationship-Supportive Social Robots Through Network-Based Clustering of Older Adults.",
+            "<b>Lee, J.</b>, Kim, Y., Yoon, S., &amp; Han, J. Identifying Optimal Intervention Timing for Social Robots Through Ecological Momentary Assessment of Older Adults' Social Networks.",
+            "<b>Lee, J.</b>, Bransky, K., Sweetser, P., Holthaus, P., et al. Toward Minimum Reporting Standards for Artificial Identity and Persona in Human–AI Interaction: A Systematic Review.",
+            "<b>Lee, J.</b>, &amp; Kim, H. When Poverty Does Not Lead to Despair: Protective Factors Against Suicidal Ideation Among Economically Disadvantaged Older Adults in a Five-Wave National Panel Study."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "presentations",
+      "title": "Conference presentations and workshops",
+      "type": "grouped-list",
+      "groups": [
+        {
+          "label": "Conference presentations",
+          "items": [
+            "<b>Lee, J.</b>, Park, J., Kim, Y., &amp; Kong, D. Channel Allocation and Equity in Preventive Campaigns for Older Adults: Agent-Based Modeling Study. Oral presentation, AMIA 2026 Annual Symposium, Dallas, Texas, November 2026.",
+            "<b>Lee, J.</b>, Park, J., Kim, Y., &amp; Kong, D. Channel Allocation and Equity in Preventive Campaigns for Older Adults: Agent-Based Modeling Study. ACM Interactive Health 2026.",
+            "<b>Lee, J.</b>, Kim, H., Park, G., Oh, S., &amp; Jung, E. Typology of Older Adults' Social Networks and Exploration of Social Robot Intervention Strategies. 5th World Conference on Humanities and Social Sciences, July 2026.",
+            "<b>Lee, J.</b>, Park, J., Kim, Y., &amp; Kong, D. Channel Allocation and Equity in Preventive Campaigns for Older Adults: Agent-Based Modeling Study. Spring Conference of the Korean Association for Policy Analysis and Evaluation, April 2026.",
+            "<b>Lee, J.</b>, &amp; Joo, C. A Study on the Perception of Self-Identity of Metaverse Users. Korean Association for Qualitative Research Conference, Seoul, 2023.",
+            "<b>Lee, J.</b>, &amp; Yang, H. The Impact of Encountering Hate Speech toward Jeolla-do on the Reinforcement of Stereotypes of Jeolla-do and the Use of Hate Speech. Korean Association for Communication and Information Studies Conference, Asan, 2022."
+          ]
+        },
+        {
+          "label": "Workshops, panels, and organization",
+          "items": [
+            "Co-organizer, <i>Emotions after Movement: Mechanical Motion and the Generation of Affect</i>, HCI Korea 2026, January 2026.",
+            "<b>Lee, J.</b> Who Hears My Secrets? Self-Disclosure in Text, Voice, and Robotic AI Counseling. Workshop presentation, <i>Envisioning the Future of Interactive Health</i>, ACM CHI 2025, Yokohama, Japan.",
+            "<b>Lee, J.</b> A Study on the Categorization of Media and Distancing Participants. Panel presentation, Korean Regional Communication Research Association Conference, Changwon, 2022."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "funding",
+      "title": "Research funding and fellowships",
+      "type": "grouped-timeline",
+      "groups": [
+        {
+          "label": "Sponsored research projects",
+          "items": [
+            { "period": "2025 – 2031", "role": "Senior Researcher", "org": "Design of a Multi-Agent Responsive Interaction System for Expanding Social Networks", "place": "Seoul National University · PI: Eui-chul Jung", "note": "Total project budget KRW 3.0 billion (approx. USD 2.0 million)" },
+            { "period": "2024 – 2026", "role": "Researcher", "org": "Interdisciplinary Cultural Virtual Studio for Implementing an AI-Based Metaverse", "place": "GIST · PI: Duk-Jo Kong", "note": "Total project budget KRW 2.76 billion (approx. USD 1.84 million)" },
+            { "period": "2024 – 2026", "role": "Researcher", "org": "Development of AI-Based Safety Technologies for Hyperconnected Mobility", "place": "GIST · PI: Duk-Jo Kong", "note": "Total project budget KRW 3.57 billion (approx. USD 2.38 million)" },
+            { "period": "2024 – 2026", "role": "Researcher", "org": "Building and Operating an AI-Based Foreign News Big Data Analysis Platform", "place": "GIST · PI: Duk-Jo Kong", "note": "Total project budget KRW 3.9 billion (approx. USD 2.6 million)" }
+          ]
+        },
+        {
+          "label": "Individual research grants and fellowships",
+          "items": [
+            { "period": "2025", "role": "Research Grant Recipient", "org": "AI Cultural Content Specialized Research Grant, Glocal University Program", "place": "Chonnam National University", "note": "KRW 3 million (approx. USD 2,000)" },
+            { "period": "2024", "role": "Scholarship Recipient", "org": "Learning Lab Program Scholarship", "place": "Korea Institute of Human Resources Development in Science and Technology", "note": "KRW 4 million (approx. USD 2,700)" },
+            { "period": "2021 – 2023", "role": "Scholarship Recipient", "org": "Innovation Research Scholarship", "place": "Chonnam National University", "note": "Total award KRW 3 million (approx. USD 2,000)" },
+            { "period": "2020", "role": "Scholarship Recipient", "org": "The 4th GS SHOP Content Leader Scholarship", "place": "Korean Society for Journalism and Communication Studies and GS SHOP", "note": "KRW 2 million (approx. USD 1,300)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "awards",
+      "title": "Selected honors and awards",
+      "type": "timeline",
+      "items": [
+        { "period": "2023", "role": "Outstanding Award", "org": "Competition for Social Value Enhancement Studies, Center for Social Value Enhancement Studies", "note": "Research project: Can Social Robots Reduce Loneliness among Older Adults?" },
+        { "period": "2015", "role": "Outstanding Award", "org": "Competition for Business Strategies Incorporating Cultural Diversity, KOTRA", "note": "Project: Market Entry Strategies for Medical Devices in Japan's Elderly Care Sector" }
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "Research methods and technical skills",
+      "type": "grouped-inline",
+      "groups": [
+        { "label": "Study design", "items": ["Field deployments", "Human-subject experiments", "Ecological momentary assessment", "Multi-wave panel and longitudinal studies", "Repeated-measures designs", "Agent-based simulation", "LLM evaluation"] },
+        { "label": "Quantitative analysis", "items": ["Multilevel and mixed-effects models", "Moderation analysis", "Longitudinal modeling", "Network-based user clustering"] },
+        { "label": "Computational tools", "items": ["Python", "R"] }
+      ]
+    },
+    {
+      "id": "experience",
+      "title": "Prior professional experience",
+      "type": "timeline",
+      "items": [
+        {
+          "period": "May 2018 – Feb 2024",
+          "role": "Manager",
+          "org": "AI & Digital Media Business TF, Korea Communications Agency",
+          "place": "Naju, South Korea",
+          "bullets": [
+            "Managed national ICT R&D funding programs and conducted policy research on AI and digital media for government stakeholders."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "title": "Professional service",
+      "type": "timeline",
+      "items": [
+        { "period": "2026", "role": "External Reviewer", "org": "ACM/IEEE International Conference on Human–Robot Interaction (HRI 2027)" },
+        { "period": "2026", "role": "External Reviewer", "org": "Design Works, Korean Society of Design Science" },
+        { "period": "2026", "role": "External Reviewer", "org": "Korean Journal of Broadcasting & Telecommunications Research, Korean Association for Broadcasting & Telecommunication Studies" },
+        { "period": "Jan 2023 – present", "role": "Member", "org": "Committee for Jeollanam-do's Investment-Funded Institutions", "note": "Review and evaluate performance of provincially funded research and public institutions." },
+        { "period": "May 2024 – Aug 2024", "role": "Member", "org": "Research Group for Future Strategic Industries in Sejong", "note": "Advised on emerging technology trends for national industrial strategy." }
+      ]
+    },
+    {
+      "id": "references",
+      "title": "References",
+      "type": "list",
+      "intro": "Contact details are provided in the PDF CV or on request.",
+      "items": [
+        "<b>Chungmin Joo, Ph.D.</b> · Professor, Chonnam National University · Doctoral advisor",
+        "<b>Hyeseung Yang, Ph.D.</b> · Professor, Chonnam National University · Research collaborator",
+        "<b>Duk-Jo Kong, Ph.D.</b> · Assistant Professor, Gwangju Institute of Science and Technology · Principal investigator"
+      ]
+    }
+  ]
+}
