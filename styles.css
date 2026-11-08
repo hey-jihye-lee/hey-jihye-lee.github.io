@@ -122,6 +122,21 @@ p { margin: 0; }
 .boxes a:hover p { color: #d6d6d6; }
 .boxes a:hover span { color: #fff; }
 
+/* background / teaching / beyond research */
+.about-more { display: grid; grid-template-columns: 1fr; gap: 36px; max-width: 760px; }
+.about-block h2 { font-size: 22px; margin-bottom: 12px; }
+.about-block p { margin-bottom: 14px; max-width: 68ch; }
+.about-block p:last-child { margin-bottom: 0; }
+.about-block a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+.about-block a:hover { border-bottom-color: var(--accent); }
+
+/* contact strip */
+.contact-strip { border-top: 1px solid var(--line); padding-top: 44px !important; }
+.contact-strip h2 { font-size: 24px; margin-bottom: 10px; }
+.contact-strip p { color: var(--muted); max-width: 68ch; }
+.contact-strip a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.contact-strip a:hover { text-decoration: underline; }
+
 /* selected publications */
 .selected-pubs article {
   display: grid;
